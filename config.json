@@ -1,0 +1,40 @@
+{
+  "architectures": [
+    "OrganCNN"
+  ],
+  "dropout": 0.3,
+  "id2label": {
+    "0": "liver",
+    "1": "kidney-right",
+    "10": "pancreas",
+    "2": "kidney-left",
+    "3": "femur-right",
+    "4": "femur-left",
+    "5": "bladder",
+    "6": "heart",
+    "7": "lung-right",
+    "8": "lung-left",
+    "9": "spleen"
+  },
+  "in_ch": 1,
+  "label2id": {
+    "bladder": 5,
+    "femur-left": 4,
+    "femur-right": 3,
+    "heart": 6,
+    "kidney-left": 2,
+    "kidney-right": 1,
+    "liver": 0,
+    "lung-left": 8,
+    "lung-right": 7,
+    "pancreas": 10,
+    "spleen": 9
+  },
+  "model_type": "organcnn",
+  "num_classes": 11,
+  "num_parameters": 105307,
+  "torch_dtype": "float32",
+  "train_mean": 0.50092,
+  "train_std": 0.28022,
+  "volume_size": 28
+}

@@ -1,0 +1,1040 @@
+{
+  "split": "test",
+  "accuracy": 0.8574,
+  "auc_macro_ovr": 0.986,
+  "balanced_accuracy": 0.878,
+  "confusion_matrix": [
+    [
+      68,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      44,
+      20,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      3,
+      57,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      5,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      60,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      26,
+      37,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      3,
+      0,
+      60,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      26,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      21,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      21,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      63,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      66
+    ]
+  ],
+  "per_class_recall": {
+    "liver": 0.9855,
+    "kidney-right": 0.6471,
+    "kidney-left": 0.8261,
+    "femur-right": 0.9231,
+    "femur-left": 0.5692,
+    "bladder": 0.9091,
+    "heart": 0.9286,
+    "lung-right": 1.0,
+    "lung-left": 1.0,
+    "spleen": 0.913,
+    "pancreas": 0.9565
+  },
+  "per_class_precision": {
+    "liver": 0.9714,
+    "kidney-right": 0.9362,
+    "kidney-left": 0.6706,
+    "femur-right": 0.6522,
+    "femur-left": 0.9024,
+    "bladder": 0.9231,
+    "heart": 1.0,
+    "lung-right": 1.0,
+    "lung-left": 1.0,
+    "spleen": 0.875,
+    "pancreas": 0.9429
+  },
+  "class_counts": [
+    69,
+    68,
+    69,
+    65,
+    65,
+    66,
+    28,
+    21,
+    21,
+    69,
+    69
+  ],
+  "majority_baseline": 0.1131,
+  "n": 610,
+  "failure_analysis": {
+    "top_confusion_pairs": [
+      {
+        "true": "femur-left",
+        "predicted": "femur-right",
+        "count": 26,
+        "share_of_true_class": 0.4
+      },
+      {
+        "true": "kidney-right",
+        "predicted": "kidney-left",
+        "count": 20,
+        "share_of_true_class": 0.2941
+      },
+      {
+        "true": "spleen",
+        "predicted": "kidney-left",
+        "count": 6,
+        "share_of_true_class": 0.087
+      },
+      {
+        "true": "kidney-left",
+        "predicted": "spleen",
+        "count": 5,
+        "share_of_true_class": 0.0725
+      },
+      {
+        "true": "femur-right",
+        "predicted": "femur-left",
+        "count": 4,
+        "share_of_true_class": 0.0615
+      },
+      {
+        "true": "bladder",
+        "predicted": "femur-right",
+        "count": 3,
+        "share_of_true_class": 0.0455
+      },
+      {
+        "true": "kidney-left",
+        "predicted": "kidney-right",
+        "count": 3,
+        "share_of_true_class": 0.0435
+      },
+      {
+        "true": "bladder",
+        "predicted": "liver",
+        "count": 2,
+        "share_of_true_class": 0.0303
+      },
+      {
+        "true": "heart",
+        "predicted": "bladder",
+        "count": 2,
+        "share_of_true_class": 0.0714
+      },
+      {
+        "true": "kidney-left",
+        "predicted": "femur-right",
+        "count": 2,
+        "share_of_true_class": 0.029
+      },
+      {
+        "true": "kidney-right",
+        "predicted": "spleen",
+        "count": 2,
+        "share_of_true_class": 0.0294
+      },
+      {
+        "true": "bladder",
+        "predicted": "pancreas",
+        "count": 1,
+        "share_of_true_class": 0.0152
+      },
+      {
+        "true": "femur-left",
+        "predicted": "bladder",
+        "count": 1,
+        "share_of_true_class": 0.0154
+      },
+      {
+        "true": "femur-left",
+        "predicted": "kidney-left",
+        "count": 1,
+        "share_of_true_class": 0.0154
+      },
+      {
+        "true": "femur-right",
+        "predicted": "pancreas",
+        "count": 1,
+        "share_of_true_class": 0.0154
+      },
+      {
+        "true": "kidney-left",
+        "predicted": "bladder",
+        "count": 1,
+        "share_of_true_class": 0.0145
+      },
+      {
+        "true": "kidney-left",
+        "predicted": "pancreas",
+        "count": 1,
+        "share_of_true_class": 0.0145
+      },
+      {
+        "true": "kidney-right",
+        "predicted": "femur-right",
+        "count": 1,
+        "share_of_true_class": 0.0147
+      },
+      {
+        "true": "kidney-right",
+        "predicted": "pancreas",
+        "count": 1,
+        "share_of_true_class": 0.0147
+      },
+      {
+        "true": "liver",
+        "predicted": "spleen",
+        "count": 1,
+        "share_of_true_class": 0.0145
+      },
+      {
+        "true": "pancreas",
+        "predicted": "bladder",
+        "count": 1,
+        "share_of_true_class": 0.0145
+      },
+      {
+        "true": "pancreas",
+        "predicted": "kidney-left",
+        "count": 1,
+        "share_of_true_class": 0.0145
+      },
+      {
+        "true": "pancreas",
+        "predicted": "spleen",
+        "count": 1,
+        "share_of_true_class": 0.0145
+      }
+    ],
+    "errors": {
+      "n": 87,
+      "items": [
+        {
+          "test_index": 3,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5869,
+          "true_class_prob": 0.394,
+          "nonzero_voxels": 21223
+        },
+        {
+          "test_index": 8,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.4616,
+          "true_class_prob": 0.4379,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 16,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.6164,
+          "true_class_prob": 0.3179,
+          "nonzero_voxels": 21924
+        },
+        {
+          "test_index": 18,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.4919,
+          "true_class_prob": 0.4049,
+          "nonzero_voxels": 21878
+        },
+        {
+          "test_index": 42,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.4957,
+          "true_class_prob": 0.3098,
+          "nonzero_voxels": 21946
+        },
+        {
+          "test_index": 45,
+          "label": "femur-left",
+          "predicted": "bladder",
+          "predicted_prob": 0.4017,
+          "true_class_prob": 0.1131,
+          "nonzero_voxels": 18080
+        },
+        {
+          "test_index": 52,
+          "label": "spleen",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.3965,
+          "true_class_prob": 0.357,
+          "nonzero_voxels": 19363
+        },
+        {
+          "test_index": 59,
+          "label": "spleen",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.4637,
+          "true_class_prob": 0.241,
+          "nonzero_voxels": 19818
+        },
+        {
+          "test_index": 61,
+          "label": "femur-right",
+          "predicted": "femur-left",
+          "predicted_prob": 0.5925,
+          "true_class_prob": 0.3776,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 63,
+          "label": "spleen",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.4624,
+          "true_class_prob": 0.3115,
+          "nonzero_voxels": 20178
+        },
+        {
+          "test_index": 69,
+          "label": "kidney-left",
+          "predicted": "spleen",
+          "predicted_prob": 0.4233,
+          "true_class_prob": 0.3219,
+          "nonzero_voxels": 20994
+        },
+        {
+          "test_index": 70,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.6256,
+          "true_class_prob": 0.3161,
+          "nonzero_voxels": 9056
+        },
+        {
+          "test_index": 82,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.53,
+          "true_class_prob": 0.4153,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 84,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.6109,
+          "true_class_prob": 0.3268,
+          "nonzero_voxels": 21197
+        },
+        {
+          "test_index": 86,
+          "label": "kidney-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.3946,
+          "true_class_prob": 0.1013,
+          "nonzero_voxels": 14196
+        },
+        {
+          "test_index": 108,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.4954,
+          "true_class_prob": 0.4799,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 126,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.5992,
+          "true_class_prob": 0.3812,
+          "nonzero_voxels": 21939
+        },
+        {
+          "test_index": 133,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.4692,
+          "true_class_prob": 0.2181,
+          "nonzero_voxels": 21825
+        },
+        {
+          "test_index": 137,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.3018,
+          "true_class_prob": 0.2179,
+          "nonzero_voxels": 21950
+        },
+        {
+          "test_index": 141,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.6058,
+          "true_class_prob": 0.3021,
+          "nonzero_voxels": 20285
+        },
+        {
+          "test_index": 143,
+          "label": "femur-right",
+          "predicted": "femur-left",
+          "predicted_prob": 0.5658,
+          "true_class_prob": 0.4228,
+          "nonzero_voxels": 21949
+        },
+        {
+          "test_index": 145,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.49,
+          "true_class_prob": 0.459,
+          "nonzero_voxels": 20118
+        },
+        {
+          "test_index": 152,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.5617,
+          "true_class_prob": 0.1662,
+          "nonzero_voxels": 21950
+        },
+        {
+          "test_index": 162,
+          "label": "bladder",
+          "predicted": "liver",
+          "predicted_prob": 0.5794,
+          "true_class_prob": 0.0034,
+          "nonzero_voxels": 21063
+        },
+        {
+          "test_index": 163,
+          "label": "liver",
+          "predicted": "spleen",
+          "predicted_prob": 0.5934,
+          "true_class_prob": 0.2979,
+          "nonzero_voxels": 19177
+        },
+        {
+          "test_index": 179,
+          "label": "femur-right",
+          "predicted": "femur-left",
+          "predicted_prob": 0.5318,
+          "true_class_prob": 0.4573,
+          "nonzero_voxels": 21950
+        },
+        {
+          "test_index": 180,
+          "label": "pancreas",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.3014,
+          "true_class_prob": 0.1591,
+          "nonzero_voxels": 21153
+        },
+        {
+          "test_index": 187,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.503,
+          "true_class_prob": 0.4804,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 189,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5143,
+          "true_class_prob": 0.3942,
+          "nonzero_voxels": 21789
+        },
+        {
+          "test_index": 191,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5351,
+          "true_class_prob": 0.2709,
+          "nonzero_voxels": 18583
+        },
+        {
+          "test_index": 197,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.6244,
+          "true_class_prob": 0.2903,
+          "nonzero_voxels": 5350
+        },
+        {
+          "test_index": 200,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5117,
+          "true_class_prob": 0.4304,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 203,
+          "label": "spleen",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.4734,
+          "true_class_prob": 0.1542,
+          "nonzero_voxels": 21889
+        },
+        {
+          "test_index": 223,
+          "label": "kidney-left",
+          "predicted": "pancreas",
+          "predicted_prob": 0.4374,
+          "true_class_prob": 0.0594,
+          "nonzero_voxels": 19858
+        },
+        {
+          "test_index": 232,
+          "label": "bladder",
+          "predicted": "femur-right",
+          "predicted_prob": 0.4305,
+          "true_class_prob": 0.17,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 248,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5545,
+          "true_class_prob": 0.3764,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 249,
+          "label": "bladder",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5418,
+          "true_class_prob": 0.0057,
+          "nonzero_voxels": 16366
+        },
+        {
+          "test_index": 263,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.5814,
+          "true_class_prob": 0.2868,
+          "nonzero_voxels": 20345
+        },
+        {
+          "test_index": 266,
+          "label": "heart",
+          "predicted": "bladder",
+          "predicted_prob": 0.2015,
+          "true_class_prob": 0.1151,
+          "nonzero_voxels": 15544
+        },
+        {
+          "test_index": 270,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5876,
+          "true_class_prob": 0.384,
+          "nonzero_voxels": 16490
+        },
+        {
+          "test_index": 280,
+          "label": "bladder",
+          "predicted": "femur-right",
+          "predicted_prob": 0.3578,
+          "true_class_prob": 0.3059,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 282,
+          "label": "kidney-right",
+          "predicted": "femur-right",
+          "predicted_prob": 0.3742,
+          "true_class_prob": 0.1697,
+          "nonzero_voxels": 14478
+        },
+        {
+          "test_index": 283,
+          "label": "kidney-left",
+          "predicted": "spleen",
+          "predicted_prob": 0.4015,
+          "true_class_prob": 0.0858,
+          "nonzero_voxels": 21712
+        },
+        {
+          "test_index": 298,
+          "label": "pancreas",
+          "predicted": "spleen",
+          "predicted_prob": 0.4573,
+          "true_class_prob": 0.2647,
+          "nonzero_voxels": 21440
+        },
+        {
+          "test_index": 301,
+          "label": "kidney-left",
+          "predicted": "kidney-right",
+          "predicted_prob": 0.5205,
+          "true_class_prob": 0.4374,
+          "nonzero_voxels": 21426
+        },
+        {
+          "test_index": 304,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.5919,
+          "true_class_prob": 0.2376,
+          "nonzero_voxels": 21157
+        },
+        {
+          "test_index": 305,
+          "label": "kidney-right",
+          "predicted": "pancreas",
+          "predicted_prob": 0.4123,
+          "true_class_prob": 0.0404,
+          "nonzero_voxels": 21250
+        },
+        {
+          "test_index": 333,
+          "label": "femur-left",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.2996,
+          "true_class_prob": 0.0216,
+          "nonzero_voxels": 21766
+        },
+        {
+          "test_index": 336,
+          "label": "bladder",
+          "predicted": "pancreas",
+          "predicted_prob": 0.4951,
+          "true_class_prob": 0.2634,
+          "nonzero_voxels": 21734
+        },
+        {
+          "test_index": 340,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.4857,
+          "true_class_prob": 0.476,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 343,
+          "label": "kidney-left",
+          "predicted": "spleen",
+          "predicted_prob": 0.4921,
+          "true_class_prob": 0.1475,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 354,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5623,
+          "true_class_prob": 0.374,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 360,
+          "label": "femur-right",
+          "predicted": "pancreas",
+          "predicted_prob": 0.5934,
+          "true_class_prob": 0.0039,
+          "nonzero_voxels": 21519
+        },
+        {
+          "test_index": 362,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.4516,
+          "true_class_prob": 0.4418,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 373,
+          "label": "kidney-left",
+          "predicted": "spleen",
+          "predicted_prob": 0.4194,
+          "true_class_prob": 0.2253,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 390,
+          "label": "kidney-left",
+          "predicted": "bladder",
+          "predicted_prob": 0.2619,
+          "true_class_prob": 0.2358,
+          "nonzero_voxels": 16136
+        },
+        {
+          "test_index": 392,
+          "label": "heart",
+          "predicted": "bladder",
+          "predicted_prob": 0.2973,
+          "true_class_prob": 0.2651,
+          "nonzero_voxels": 14361
+        },
+        {
+          "test_index": 396,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5588,
+          "true_class_prob": 0.3817,
+          "nonzero_voxels": 19847
+        },
+        {
+          "test_index": 402,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5815,
+          "true_class_prob": 0.3541,
+          "nonzero_voxels": 16544
+        },
+        {
+          "test_index": 407,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.431,
+          "true_class_prob": 0.2478,
+          "nonzero_voxels": 14687
+        },
+        {
+          "test_index": 416,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5486,
+          "true_class_prob": 0.403,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 417,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5424,
+          "true_class_prob": 0.3967,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 425,
+          "label": "kidney-left",
+          "predicted": "kidney-right",
+          "predicted_prob": 0.5219,
+          "true_class_prob": 0.4108,
+          "nonzero_voxels": 21886
+        },
+        {
+          "test_index": 438,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.6196,
+          "true_class_prob": 0.2835,
+          "nonzero_voxels": 4898
+        },
+        {
+          "test_index": 440,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5443,
+          "true_class_prob": 0.4225,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 452,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.3645,
+          "true_class_prob": 0.1746,
+          "nonzero_voxels": 21693
+        },
+        {
+          "test_index": 464,
+          "label": "spleen",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.4455,
+          "true_class_prob": 0.3387,
+          "nonzero_voxels": 21445
+        },
+        {
+          "test_index": 466,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5507,
+          "true_class_prob": 0.4029,
+          "nonzero_voxels": 21927
+        },
+        {
+          "test_index": 467,
+          "label": "kidney-left",
+          "predicted": "kidney-right",
+          "predicted_prob": 0.4923,
+          "true_class_prob": 0.3541,
+          "nonzero_voxels": 21355
+        },
+        {
+          "test_index": 472,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.5469,
+          "true_class_prob": 0.3138,
+          "nonzero_voxels": 21917
+        },
+        {
+          "test_index": 473,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.4656,
+          "true_class_prob": 0.3496,
+          "nonzero_voxels": 20768
+        },
+        {
+          "test_index": 492,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.5664,
+          "true_class_prob": 0.3692,
+          "nonzero_voxels": 21654
+        },
+        {
+          "test_index": 500,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.7682,
+          "true_class_prob": 0.1867,
+          "nonzero_voxels": 21062
+        },
+        {
+          "test_index": 504,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.3804,
+          "true_class_prob": 0.2063,
+          "nonzero_voxels": 12142
+        },
+        {
+          "test_index": 517,
+          "label": "kidney-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.3499,
+          "true_class_prob": 0.1108,
+          "nonzero_voxels": 8164
+        },
+        {
+          "test_index": 527,
+          "label": "kidney-right",
+          "predicted": "spleen",
+          "predicted_prob": 0.3377,
+          "true_class_prob": 0.0891,
+          "nonzero_voxels": 19454
+        },
+        {
+          "test_index": 532,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.5712,
+          "true_class_prob": 0.3947,
+          "nonzero_voxels": 20865
+        },
+        {
+          "test_index": 539,
+          "label": "spleen",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.387,
+          "true_class_prob": 0.3702,
+          "nonzero_voxels": 18185
+        },
+        {
+          "test_index": 540,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.5912,
+          "true_class_prob": 0.2192,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 555,
+          "label": "kidney-left",
+          "predicted": "spleen",
+          "predicted_prob": 0.1961,
+          "true_class_prob": 0.0827,
+          "nonzero_voxels": 20181
+        },
+        {
+          "test_index": 557,
+          "label": "pancreas",
+          "predicted": "bladder",
+          "predicted_prob": 0.353,
+          "true_class_prob": 0.2642,
+          "nonzero_voxels": 21716
+        },
+        {
+          "test_index": 567,
+          "label": "kidney-right",
+          "predicted": "spleen",
+          "predicted_prob": 0.4408,
+          "true_class_prob": 0.1303,
+          "nonzero_voxels": 17133
+        },
+        {
+          "test_index": 569,
+          "label": "femur-right",
+          "predicted": "femur-left",
+          "predicted_prob": 0.5139,
+          "true_class_prob": 0.4348,
+          "nonzero_voxels": 21952
+        },
+        {
+          "test_index": 570,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.3302,
+          "true_class_prob": 0.2869,
+          "nonzero_voxels": 20358
+        },
+        {
+          "test_index": 586,
+          "label": "kidney-right",
+          "predicted": "kidney-left",
+          "predicted_prob": 0.5533,
+          "true_class_prob": 0.2039,
+          "nonzero_voxels": 21822
+        },
+        {
+          "test_index": 597,
+          "label": "bladder",
+          "predicted": "liver",
+          "predicted_prob": 0.8136,
+          "true_class_prob": 0.0009,
+          "nonzero_voxels": 21525
+        },
+        {
+          "test_index": 608,
+          "label": "femur-left",
+          "predicted": "femur-right",
+          "predicted_prob": 0.4909,
+          "true_class_prob": 0.4593,
+          "nonzero_voxels": 21952
+        }
+      ]
+    },
+    "mean_predicted_prob_correct": 0.7801,
+    "mean_predicted_prob_incorrect": 0.4882,
+    "nonzero_voxel_mean_correct": 20105.5,
+    "nonzero_voxel_mean_incorrect": 19846.8,
+    "left_right_confusions": 53
+  }
+}
